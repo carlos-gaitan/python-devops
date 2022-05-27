@@ -1,10 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
-# import run_with_ngrok from flask_ngrok to run the app using ngrok
-from flask_ngrok import run_with_ngrok
 
 app = Flask(__name__)
-run_with_ngrok(app)  # Start ngrok when app is run
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///myapp.sqlite'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
