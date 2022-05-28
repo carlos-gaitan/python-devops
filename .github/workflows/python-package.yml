@@ -43,5 +43,5 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         repository: mardeltux/python-devops
-        tag_with_ref: True
+        tag_with_ref: true
       
