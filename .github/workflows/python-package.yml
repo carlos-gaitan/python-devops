@@ -51,13 +51,13 @@ jobs:
       uses: CDNievas/heroku-action@v1.0
       with:
         # Used for authentication. You can find it in your heroku homepage account settings
-        heroku_api_key: 6272a7b2-deb5-4062-801c-2751a946a95b
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
         # Email from Heroku Account
         heroku_email: mardeltux@gmail.com
         # The appname to use for deploying/updating
         heroku_app_name: python-devops-elcharly
         # The branch that you would like to deploy to Heroku
-        branch: # optional, default is HEAD
+        branch: main # optional, default is HEAD
         # Set this to true if want to use --force
         useforce: # optional
         # Set if your app is located in a subdirectory.
