@@ -13,7 +13,7 @@ class Myapp(db.Model):
 
 @app.route('/')
 def home():
-	return ':: elcharly zone ::'
+	return ':: elcharly zone  testing heroku automatic deploy::'
 
 @app.route('/insert', methods=["POST"])
 def insert():
